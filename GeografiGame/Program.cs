@@ -4,8 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Capitals Game!");
-
+            Scoreboard scoreboard = new Scoreboard();
+            Console.WriteLine("======CAPITALS GAME======");
+            Console.WriteLine();
             Console.WriteLine("Type in your name: ");
             string name = Console.ReadLine();
 
@@ -56,18 +57,22 @@
 
                 if (answer.ToUpper() == selectedCountry.capitalEn.ToUpper() || answer.ToUpper() == selectedCountry.capitalSwe.ToUpper())
                 {
-
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Right answer!");
                     score++;
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Wrong answer!");
                 }
 
 
             }
             Console.WriteLine($"Good job {name} you got {score} points out of {totalQuestions}!");
+
+            scoreboard.AddScore(name, score);
+            scoreboard.Display();
             Console.ReadLine();
 
         }

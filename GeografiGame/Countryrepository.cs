@@ -31,7 +31,7 @@ namespace GeografiGame
                 new Country("Hungary", "Budapest", "Budapest"),
                 new Country("Iceland", "Reykjavik", "Reykjavik"),
                 new Country("Croatia", "Zagreb", "Zagreb"),
-                new Country("Ukraine", "Kyiv", "Kjiv"),
+                new Country("Ukraine", "Kyiv", "Kiev"),
                 new Country("Romania", "Bucharest", "Bukarest"),
                 new Country("Estonia", "Tallinn", "Tallinn"),
                 new Country("Latvia", "Riga", "Riga"),
